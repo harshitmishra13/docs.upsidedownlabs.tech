@@ -637,7 +637,7 @@ It is an electrogram of the heart which is a graph of voltage versus time of the
 of the heart using electrodes placed on the skin. These electrodes detect the small electrical
 changes that are a consequence of cardiac muscle depolarization followed by repolarization during
 each cardiac cycle (heartbeat).</p>
-<p>To know more about EEG <a class="reference external" href="https://en.wikipedia.org/wiki/Electroencephalography">visit here</a>.</p>
+<p>To know more about ECG <a class="reference external" href="https://en.wikipedia.org/wiki/Electroencephalography">visit here</a>.</p>
 <p><strong>Who is this for?</strong></p>
 <p>Anyone who’s using the BioAmp Hardware for the very first time — whether you’re a student, hobbyist, educator or just curious. No experience needed!</p>
 <p>👉 To learn about our BioAmp Hardware checkout <a class="reference internal" href="../../../hardware/index.html#upsidedownlabs-hardware-home"><span class="std std-ref">the hardware page</span></a>.</p>
@@ -690,7 +690,7 @@ Clone using Git (for tech-savvy users)<div class="sd-summary-down docutils">
 </li>
 <li><p><strong>Chords Website</strong></p>
 <ul class="simple">
-<li><p>We will use Chords Website to visualize the Eye Signals!</p></li>
+<li><p>We will use Chords Website to visualize the Heart Signals!</p></li>
 <li><p>Open this website: <a class="reference external" href="https://chords.upsidedownlabs.tech">Chords Web</a></p></li>
 </ul>
 </li>
@@ -699,7 +699,7 @@ Clone using Git (for tech-savvy users)<div class="sd-summary-down docutils">
 <ol class="arabic simple">
 <li><p>Plug the Hardware into your Arduino UNO using jumper wires.</p></li>
 <li><p>Follow the exact wiring diagram from the <a class="reference internal" href="../../../hardware/index.html#upsidedownlabs-hardware-home"><span class="std std-ref">hardware documentation</span></a> of the hardware you are using.</p></li>
-<li><p>Hardwares that are compatible with Eye BioAmp Firmware:</p>
+<li><p>Hardwares that are compatible with Heart BioAmp Firmware:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../../../hardware/bioamp/bioamp-exg-pill/index.html#bioamp-exg-pill"><span class="std std-ref">Bioamp EXG Pill</span></a></p></li>
 <li><p><a class="reference internal" href="../../../hardware/bioamp/heart-bioamp-candy/index.html#heart-bioamp-candy"><span class="std std-ref">Heart BioAmp Candy</span></a></p></li>
@@ -734,11 +734,14 @@ Clone using Git (for tech-savvy users)<div class="sd-summary-down docutils">
 <figure class="align-default">
 <img alt="../../../_images/skin-prep-ecg.png" src="../../../_images/skin-prep-ecg.png" />
 </figure>
+<ul class="simple">
+<li><p><strong>Using BioAmp Band:</strong> For BioAmp Band, refer to the following documentation: <a class="reference internal" href="../../../guides/usage-guides/using-bioamp-bands/index.html#using-bioamp-bands"><span class="std std-ref">Using BioAmp Bands</span></a></p></li>
+</ul>
 <p id="how-to-upload-the-code-to-arduino"><strong>Step 5: How to upload the Code to Arduino</strong></p>
 <ol class="arabic simple">
 <li><p>Open the folder you downloaded: <strong>Heart-BioAmp-Arduino-Firmware</strong></p></li>
 <li><p>Inside that, you’ll find several subfolders.</p></li>
-<li><p>Pick the folder for the experiment you want to try. (For beginners: start with the first one and move step-by-step through the others for a better learning experience )</p></li>
+<li><p>Pick the folder for the experiment you want to try. (For beginners: start with the first one and move step-by-step through the others for a better learning experience)</p></li>
 <li><p>Inside that folder, open the <strong>.ino</strong> file using <strong>Arduino IDE</strong></p></li>
 </ol>
 <ul class="simple">
@@ -825,7 +828,7 @@ using an analog pin and prints it to the Serial Monitor. It’s useful for under
 what the unfiltered heart signal looks like. Think of it like looking at the “raw ingredients” before cooking.</p>
 <p class="sd-card-text"><strong>2. How It Works</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">analogRead(A0)</span></code> reads voltage from the Eye BioAmp sensor.</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">analogRead(A0)</span></code> reads voltage from the Heart BioAmp sensor.</p></li>
 <li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Serial.println()</span></code> prints those values to the computer.</p></li>
 <li><p class="sd-card-text">A timer ensures values are read at a steady rate.</p></li>
 </ul>
@@ -845,17 +848,11 @@ what the unfiltered heart signal looks like. Think of it like looking at the “
 </ul>
 <p class="sd-card-text"><strong>6. Running &amp; Observing Results</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text">A stream of numbers.</p></li>
-<li><p class="sd-card-text">Looking up/down → sudden voltage change.</p></li>
-<li><p class="sd-card-text">Blinks → sharp spikes.</p></li>
+<li><p class="sd-card-text">The numbers jump up and down rapidly, reflecting every tiny fluctuation in the raw ECG voltage.</p></li>
+<li><p class="sd-card-text">Baseline wander (slow drift up/down over seconds).</p></li>
+<li><p class="sd-card-text">High‑frequency spikes (muscle noise, line interference).</p></li>
+<li><p class="sd-card-text">The peaks corresponding to heartbeats are buried in noise and drift—this is purely your unfiltered signal.</p></li>
 </ul>
-<p class="sd-card-text">Checkout Demo Visualization on <strong>YouTube</strong>:</p>
-<div class="video_wrapper" style="">
-<iframe allowfullscreen="true" src="https://www.youtube.com/embed/Txo7DjUr5Tk" style="border: 0; height: 345px; width: 560px">
-</iframe></div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p class="sd-card-text">To learn more about this project, visit our Instructables page: <a class="reference external" href="https://www.instructables.com/Visualizing-Electrical-Impulses-of-Eyes-EOG-Using-/">Visualizing Electrical Impulses of Eyes (EOG) Using BioAmp EXG Pill</a></p>
-</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -864,6 +861,38 @@ what the unfiltered heart signal looks like. Think of it like looking at the “
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>1. Program Purpose &amp; Overview</strong></p>
+<p class="sd-card-text">The <strong>ECG Filter</strong> program passes your raw ECG through a digital band‑pass filter (0.5–44.5 Hz),
+removing baseline drift and high‑frequency noise so you see only the heart’s true waveform.</p>
+<p class="sd-card-text">Real ECGs have very slow wandering trends (e.g. breathing‑related drift) and high‑frequency
+interference (muscle noise, powerline hum). A band‑pass filter isolates the clinically relevant
+0.5–44 Hz band where the QRS complex and T‑waves live.</p>
+<p class="sd-card-text"><strong>2. How It Works</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Uses a bandpass IIR filter order and coefficients chosen to sharply cut below 0.5 Hz and above 44.5 Hz.</p></li>
+<li><p class="sd-card-text">Applies filter sample‑by‑sample inside the same fixed‑rate loop.</p></li>
+<li><p class="sd-card-text">Prints filtered values to Serial Monitor.</p></li>
+<li><p class="sd-card-text">To learn more about filters and how to generate new filters, visit:  <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.butter.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.butter.html</a></p></li>
+</ul>
+<p class="sd-card-text"><strong>3. Perform the Hardware</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Refer to wiring as per instructions given in <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#connect-your-hardware"><span class="std std-ref">Connect Your Hardware</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>4. Firmware Upload</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">For this project, go to the repository folder (Heart-BioAmp-Arduino-Firmware/2_ECGFilter) and select <code class="docutils literal notranslate"><span class="pre">2_ECGFilter.ino</span></code>.</p></li>
+<li><p class="sd-card-text">To upload firmware, refer to <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#how-to-upload-the-code-to-arduino"><span class="std std-ref">How to upload the Code to Arduino</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>5. Visualize your signal</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Follow the steps given in <a class="reference internal" href="#visualize-your-heart-signals"><span class="std std-ref">Visualize Your Heart Signals!</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>6. Running &amp; Observing Results</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">A smooth, centered waveform where the QRS complexes (the heart’s main spikes) and T‑waves stand out clearly.</p></li>
+<li><p class="sd-card-text">You should easily spot the repeating pattern of one large spike (R‑peak) followed by smaller waves (P and T waves).</p></li>
+<li><p class="sd-card-text">If you flex or cough gently, you may see transient artifacts—these will be suppressed compared to the unfiltered signal.</p></li>
+</ul>
 <p class="sd-card-text">For detailed guide, visit our <strong>Instructables Page</strong>: <a class="reference external" href="https://www.instructables.com/Record-Publication-Grade-ECG-at-Your-Home-Using-Bi/">Record Publication Grade ECG at Your Home Using BioAmp EXG Pill</a></p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -873,6 +902,16 @@ what the unfiltered heart signal looks like. Think of it like looking at the “
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The <strong>Heart Rate Detection</strong> transforms your filtered ECG signal into a live, numerical heart‑rate readout.
+As the Arduino continuously samples the cleaned‑up ECG waveform from the BioAmp EXG Pill, this sketch
+identifies each heartbeat’s characteristic R‑wave peak and timestamps its occurrence. By measuring the
+time between successive peaks, it calculates your beats per minute (BPM) and prints the result to the
+Serial Monitor, giving you a real‑time view of your current heart rate without any external software or display.</p>
+<p class="sd-card-text">Under the hood, the sketch operates like a simple digital stethoscope: it maintains a running scan of the
+incoming ECG, and whenever the signal sharply rises above a chosen threshold—indicating an R‑wave—it
+marks that as one beat. It then computes the interval since the previous beat and applies the standard
+conversion (60 000 ms divided by the interval) to determine BPM. This approach delivers an immediate and
+intuitive heart‑rate measurement, turning raw biopotential spikes into meaningful, human‑readable data.</p>
 <p class="sd-card-text">For detailed guide, visit our <strong>Instructables Page</strong>: <a class="reference external" href="https://www.instructables.com/Measuring-Heart-Rate-Using-BioAmp-EXG-Pill/">Measuring Heart Rate Using BioAmp EXG Pill</a></p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -882,16 +921,52 @@ what the unfiltered heart signal looks like. Think of it like looking at the “
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The <strong>Heart Beat Detection</strong> program converts your filtered ECG waveform into a reliable count of heartbeats
+by monitoring the signal’s “energy” rather than raw peaks. As the Arduino continuously reads the cleaned ECG
+from the BioAmp EXG Pill, this sketch computes a short‑term measure of signal variability—essentially a running
+envelope or standard deviation of the voltage. Whenever that envelope surges above a tuned threshold
+(indicating the rapid voltage change of an R‑wave), the code registers a single heartbeat and then waits
+for the signal to subside below the threshold again, ensuring each beat is counted only once.</p>
+<p class="sd-card-text">By tracking the moments when the envelope crosses its threshold, the sketch builds a real‑time tally of your
+heartbeats. Rather than simply looking for voltage spikes, it uses the envelope to smooth out noise and
+baseline drift, making it far more robust in everyday, less‑controlled settings. The result is a dependable
+heartbeat counter that works even if the ECG amplitude varies or your electrodes shift slightly—perfect for
+basic heart‑rate monitoring without complex peak‑detection circuitry.</p>
 <p class="sd-card-text">For detailed guide, visit our <strong>Instructables Page</strong>: <a class="reference external" href="https://www.instructables.com/Detecting-Heart-Beats-Using-BioAmp-EXG-Pill/">Detecting Heart Beats Using BioAmp EXG Pill</a></p>
-</div>
+<p class="sd-card-text">Checkout Demo Visualization on <strong>YouTube</strong>:</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/uB5R-vGJjJo" style="border: 0; height: 345px; width: 560px">
+</iframe></div></div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-6. OLED BPM<div class="sd-summary-down docutils">
+5. BLE Heart Rate Detection<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">The</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+6. Faster Heart Rate Detection<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+7. OLED BPM<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The OLED BPM program turns your Arduino‑measured heart rate into a real‑time, on‑screen display. As your BioAmp sensor and beat‑detection code calculate BPM, this sketch:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Renders large, easy‑to‑read numerals on a 128×64 OLED so you can see your current heart rate at a glance.</p></li>
+<li><p class="sd-card-text">Updates the display instantly each time a new heartbeat is detected, keeping the shown BPM in sync with your pulse.</p></li>
+<li><p class="sd-card-text">Optionally animates a pulsing icon or simple bar alongside the number, giving a visual “heartbeat” cue.</p></li>
+</ul>
+<p class="sd-card-text">In other words, OLED BPM makes your Arduino setup function as a standalone heart‑rate monitor—no PC, phone, or external plotting required.</p>
 <p class="sd-card-text">For detailed guide, visit our <strong>Instructables Page</strong>: <a class="reference external" href="https://www.instructables.com/Heartrate-on-OLED-Display-in-Real-Time/">Heartrate on OLED Display in Real Time</a></p>
 </div>
 </details></section>
