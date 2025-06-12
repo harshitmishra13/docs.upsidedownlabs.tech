@@ -944,6 +944,7 @@ basic heart‑rate monitoring without complex peak‑detection circuitry.</p>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">To be documented.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -952,6 +953,40 @@ basic heart‑rate monitoring without complex peak‑detection circuitry.</p>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>1. Program Purpose &amp; Overview</strong></p>
+<p class="sd-card-text">The <strong>Faster Heart Rate Detection</strong> sketch delivers the same beat‑to‑BPM functionality as its predecessor
+but in a highly optimized package. It reads your ECG from the BioAmp EXG Pill and Muscle BioAmp Shield at a
+controlled 125 Hz rate, applies a four‑stage Butterworth band‑pass IIR filter to isolate the 0.5–44.5 Hz
+heartband, then detects each R‑wave using a running‑buffer envelope method. Rather than simple
+threshold‑crossing, it uses a small circular window of recent samples to compute both the mean and standard
+deviation, flagging a heartbeat only when the incoming sample exceeds the current mean by more than half the
+window’s standard deviation and respects a brief debounce interval.</p>
+<p class="sd-card-text"><strong>2. How It Works</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Fixed‐rate sampling at 125 Hz using a microsecond timer (micros() + timer loop) ensures consistent data intervals with very little timing overhead.</p></li>
+<li><p class="sd-card-text">Inlined 4‑section Butterworth IIR filter (ECGFilter()) removes baseline drift and high‑frequency noise in a single pass, avoiding function‑call costs.</p></li>
+<li><p class="sd-card-text">Envelope‑based peak detection over a 26‑sample circular buffer computes mean and standard deviation on the fly, flagging a heartbeat only when the current sample exceeds mean + 0.5 × stddev.</p></li>
+<li><p class="sd-card-text">Debounce logic (peakCooldownPeriod = 2 ms) uses just two Booleans and a timestamp to prevent false re‑triggers on the same beat.</p></li>
+<li><p class="sd-card-text">Circular timing buffers (timeBuffer/sumBuffer, size 5) average recent inter‑beat intervals before converting to BPM, smoothing out irregularities without large loops.</p></li>
+</ul>
+<p class="sd-card-text"><strong>3. Perform the Hardware</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Refer to wiring as per instructions given in <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#connect-your-hardware"><span class="std std-ref">Connect Your Hardware</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>4. Firmware Upload</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">For this project, go to the repository folder (Heart-BioAmp-Arduino-Firmware/6_Faster_HeartRateDetection) and select <code class="docutils literal notranslate"><span class="pre">6_Faster_HeartRateDetection.ino</span></code>.</p></li>
+<li><p class="sd-card-text">To upload firmware, refer to <a class="reference internal" href="../muscle-bioamp-arduino-firmware/index.html#how-to-upload-the-code-to-arduino"><span class="std std-ref">How to upload the Code to Arduino</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>5. Visualize your signal</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Follow the steps given in <a class="reference internal" href="#visualize-your-heart-signals"><span class="std std-ref">Visualize Your Heart Signals!</span></a></p></li>
+</ul>
+<p class="sd-card-text"><strong>6. Running &amp; Observing Results</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Smooth Readings: Thanks to the small moving‐average buffer, your displayed BPM stays steady, even if a beat comes slightly early or late.</p></li>
+<li><p class="sd-card-text">Low CPU Usage: The loop remains fast and responsive, so you can add displays or wireless features without missing any heartbeats.</p></li>
+</ul>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
