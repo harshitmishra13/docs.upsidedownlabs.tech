@@ -57,7 +57,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Oct 30, 2025"/>
+    <meta name="docbuild:last-update" content="Nov 01, 2025"/>
   </head>
   
   
@@ -632,13 +632,19 @@ It comes with the VibZ Playmate for both haptic and auditory feedback, packaged 
 This kit is perfect for users who want a smoother, plug-and-play experience without compromising flexibility or functionality.</p>
 <p>👉🏻 <strong>Get yours on CrowdSupply</strong>: <a class="reference external" href="https://www.crowdsupply.com/upside-down-labs/neuro-playground-lite">Neuro PlayGround Lite</a></p>
 <figure class="align-center" id="id1">
-<img alt="Kit Content Ninja Pack" src="../../../_images/npg-lite-ninja-pack.jpg" />
+<img alt="Neuro PlayGround Lite Ninja Pack" src="../../../_images/npg-lite-ninja-box.png" />
 <figcaption>
-<p><span class="caption-text">Kit Contents of NPG Lite Ninja Pack</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">Neuro PlayGround Lite Ninja Pack</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="contents-of-the-kit">
 <h2>Contents of the kit<a class="headerlink" href="#contents-of-the-kit" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
+<img alt="Kit Content Ninja Pack" src="../../../_images/npg-lite-ninja-pack.jpg" />
+<figcaption>
+<p><span class="caption-text">Kit Contents of NPG Lite Ninja Pack</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Kit Contents</p></th>
@@ -673,6 +679,106 @@ This kit is perfect for users who want a smoother, plug-and-play experience with
 </tbody>
 </table>
 </div>
+</section>
+<section id="vibz-playmate">
+<h2>VibZ Playmate<a class="headerlink" href="#vibz-playmate" title="Link to this heading">#</a></h2>
+<p>VibZ Playmate introduces a vibration motor for haptic feedback, a buzzer for auditory feedback,
+a QWIIC port for easy I2C sensor integration, an ON/OFF slide switch, 2.54 mm electrode header
+pins and common negative electrode option. With these Playmates, users can customize their setup
+for specific applications, whether in research, education, or interactive biofeedback experiments.
+This modular approach ensures flexibility, scalability, and better user experience.</p>
+</section>
+<section id="using-the-kit">
+<h2>Using the Kit<a class="headerlink" href="#using-the-kit" title="Link to this heading">#</a></h2>
+<p>This kit is beginner-friendly and you can easily start recording biopotential signals to create compelling
+HCI/BCI projects and explore the field of neuroscience.
+The VibZ Playmate easily connects to the NPG Lite board, providing simple haptic and auditory feedback and
+expanding the system for interactive experiments without complex wiring.</p>
+<section id="step-1-skin-preparation">
+<h3>Step 1: Skin Preparation<a class="headerlink" href="#step-1-skin-preparation" title="Link to this heading">#</a></h3>
+<p>Apply Nuprep skin preparation Gel on the target areas where the
+electrodes will be placed → rub in circular motion → clean with an alcohol swab or wet wipe.</p>
+<p>For more information, please check out detailed step by step <a class="reference internal" href="../../../guides/usage-guides/skin-preparation/index.html#skin-preparation"><span class="std std-ref">Skin Preparation Guide</span></a>.</p>
+</section>
+<section id="step-2-connect-bioamp-cables">
+<h3>Step 2: Connect BioAmp Cables<a class="headerlink" href="#step-2-connect-bioamp-cables" title="Link to this heading">#</a></h3>
+<p>Using VibZ you can record 3-channel biopotential signals, connect the jumper
+wires according to the number of channels required:</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../../_images/npg-lite-vibz-back.png"><img alt="NPG Lite Vibz Back Side" src="../../../_images/npg-lite-vibz-back.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-text">NPG Lite Vibz Back Side</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Channel</p></th>
+<th class="head"><p>Pin</p></th>
+<th class="head"><p>Channel Connection</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td rowspan="2"><p>Channel 0</p></td>
+<td><p><strong>A0P</strong></p></td>
+<td><p>+ve of Channel 0</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>A0N</strong></p></td>
+<td><p>-ve of Channel 0</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p>Channel 1</p></td>
+<td><p><strong>A1P</strong></p></td>
+<td><p>+ve of Channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>A1N</strong></p></td>
+<td><p>-ve of Channel 1</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><p>Channel 2</p></td>
+<td><p><strong>A2P</strong></p></td>
+<td><p>+ve of Channel 2</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>A2N</strong></p></td>
+<td><p>-ve of Channel 2</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><strong>REF</strong></p></td>
+<td><p>Reference cable to REF</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><strong>CN</strong></p></td>
+<td><p>Common Negative</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="step-3-place-gel-electrodes">
+<h3>Step 3: Place Gel Electrodes<a class="headerlink" href="#step-3-place-gel-electrodes" title="Link to this heading">#</a></h3>
+</section>
+<section id="step-4-upload-firmware">
+<h3>Step 4: Upload Firmware<a class="headerlink" href="#step-4-upload-firmware" title="Link to this heading">#</a></h3>
+<p>Follow the quick steps below to upload the firmware to your NPG Lite device:</p>
+<p>For detailed firmware upload guide, visit: <a class="reference internal" href="../../../software/tools/npg-lite-flasher/index.html#npg-lite-flasher"><span class="std std-ref">How to Flash Firmware on NPG Lite</span></a></p>
+<ul class="simple">
+<li><p>Power ON NPG Lite by flipping the on/off switch.</p></li>
+<li><p>Connect it to Laptop/PC via USB-C cable.</p></li>
+<li><p>Download the <a class="reference internal" href="../../../software/tools/npg-lite-flasher/index.html#npg-lite-flasher"><span class="std std-ref">NPG Lite Flasher</span></a> and run the app.</p></li>
+<li><p>Select a firmware type, select your port, and flash it on your NPG Lite.</p></li>
+<li><p>For a WiFi or BLE connection, remove the USB-C cable and enable Bluetooth or Wi-Fi on your laptop based on Firmware uploaded.</p></li>
+</ul>
+</section>
+<section id="step-5-visualizing-the-signals">
+<h3>Step 5: Visualizing the signals<a class="headerlink" href="#step-5-visualizing-the-signals" title="Link to this heading">#</a></h3>
+<p>Follow the steps below to view real-time biopotential signal data from your NPG Lite device:</p>
+<ul class="simple">
+<li><p>Go to <a class="reference external" href="https://chords.upsidedownlabs.tech/">Chords Web</a></p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Visualize</span> <span class="pre">Now</span></code>, navigate to the <code class="docutils literal notranslate"><span class="pre">NPG-Lite</span></code>, hit the <code class="docutils literal notranslate"><span class="pre">Connect</span></code> button and choose your device.</p></li>
+<li><p>You can see the biopotential signals in real-time.</p></li>
+</ul>
+<p>For the detailed guide, visit: <a class="reference internal" href="../../../software/chords/chords-web/index.html#chords"><span class="std std-ref">Chords Web</span></a></p>
+<p>Explore features like play/pause data stream, apply filters,
+increase channel count, enable features for recording and
+downloading data in CSV format.</p>
+</section>
 </section>
 </section>
 
@@ -724,6 +830,15 @@ This kit is perfect for users who want a smoother, plug-and-play experience with
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents-of-the-kit">Contents of the kit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vibz-playmate">VibZ Playmate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-kit">Using the Kit</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-skin-preparation">Step 1: Skin Preparation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-connect-bioamp-cables">Step 2: Connect BioAmp Cables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-place-gel-electrodes">Step 3: Place Gel Electrodes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-upload-firmware">Step 4: Upload Firmware</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-visualizing-the-signals">Step 5: Visualizing the signals</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
@@ -790,7 +905,7 @@ This kit is perfect for users who want a smoother, plug-and-play experience with
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="last-updated">
-  Last updated on Oct 30, 2025.
+  Last updated on Nov 01, 2025.
   <br/>
 </p></div>
       
