@@ -135,7 +135,7 @@ slide switch for instant configuration.
 To configure the board to use the Common Negative, follow these steps:
 
 1. **Connect the Shared Electrode:** Connect your single, common negative electrode jumper cable to the dedicated CN pin header.
-2. **Locate the Switch:** Find the ``COMMON NEGATIVE`` slide switchs on the bottom of the board. The silkscreen text says ``FLIP THE SWITCH FOR COMMON NEGATIVE " and points directly to it.
+2. **Locate the Switch:** Find the ``COMMON NEGATIVE`` slide switchs on the bottom of the board. The silkscreen text says ``FLIP THE SWITCH FOR COMMON NEGATIVE`` and points directly to it.
 3. **Enable CN mode:** Flip the switch according to the negative channels input pins (A0N, A1N, A2N, A3N, A4N, and A5N). You now only need to connect your positive electrodes (e.g., A0P, A1P, etc.) and the single Common Negative electrode. You can leave all the individual negative pins (A0N-A5N) empty.
 
 Step 3: Place Gel Electrodes
@@ -199,11 +199,11 @@ EEG (Electroencephalogram)
 
 - **1-CH Setup**: Place +ve cable of Channel 0 on the targeted area, REF and -ve cable on the bony part at the back of each earlobe. (refer to the `International 10-20 system for recording EEG <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_)
 
-- **2-CH Setup**: Place +ve cables of Channel 0 and 1 on the targeted area (refer to the `International 10-20 system for recording EEG <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_), 1 REF and 1 CN (Common Negative) cable on the bony parts at the back of each earlobe.
+- **2-CH Setup**: Place +ve cables of Channel 0 and 1 on the targeted area (refer to the `International 10-20 system for recording EEG <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_), 1 REF and 1 CN (Common Negative) cable on the bony parts at the back of each earlobe. Make sure the common negative switch for the respective channels is flipped accordingly, as per the information provided above.
 
-- **3-CH Setup**:  Place +ve cables of Channel 0, 1 and 2 on the targeted area (refer to the `International 10-20 system for recording EEG <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_), 1 REF and 1 CN (Common Negative) cable on the bony part at the back of each earlobe.
+- **3-CH Setup**:  Place +ve cables of Channel 0, 1 and 2 on the targeted area (refer to the `International 10-20 system for recording EEG <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_), 1 REF and 1 CN (Common Negative) cable on the bony part at the back of each earlobe. Make sure the common negative switch for the respective channels is flipped accordingly, as per the information provided above.
 
-- **General Multi-Channel Setup:** For any multi-channel recording (2-CH or more), place the +ve cable for each respective channel on the targeted areas, then use only one REF cable and one CN (Common Negative) cable for all channels, placing them on your chosen reference points. (refer to the `International 10-20 system for recording EEG <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_)
+- **General Multi-Channel Setup:** For any multi-channel recording (2-CH or more), place the +ve cable for each respective channel on the targeted areas, then use only one REF cable and one CN (Common Negative) cable for all channels, placing them on your chosen reference points. (refer to the `International 10-20 system for recording EEG <https://en.wikipedia.org/wiki/10%E2%80%9320_system_(EEG)>`_). Make sure the common negative switch for the respective channels is flipped accordingly, as per the information provided above.
 
 .. figure:: media/npg-lite-EEG-vibz+.*
     :align: center
@@ -218,7 +218,7 @@ Follow the quick steps below to upload the firmware to your NPG Lite device:
 
 For detailed firmware upload guide, visit: :ref:`How to Flash Firmware on NPG Lite<npg-lite-flasher>`
 
-- Power ON NPG Lite by flipping the on/off switch.
+- Power ON NPG Lite by flipping the ON/OFF switch.
 - Connect it to Laptop/PC via USB-C cable.
 - Download the :ref:`NPG Lite Flasher<npg-lite-flasher>` and run the app.
 - Select a firmware type, select your port, and flash it on your NPG Lite.
