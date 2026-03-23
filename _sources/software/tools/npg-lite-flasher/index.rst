@@ -53,7 +53,11 @@ Hardware Requirements
 Setting up the hardware
 ***********************
 
+<<<<<<< HEAD
+Let's get started by getting your NPG Lite or ESP32 development board ready.
+=======
 Let's get started by getting your NPG Lite or ESP32 development board ready. Turn ON the NPG Lite using the power switch located on the side of the board.  
+>>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 
 Installation
 ******************

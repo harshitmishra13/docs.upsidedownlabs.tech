@@ -6,7 +6,11 @@ Chords-LSL-Visualizer
 Overview
 ********
 
+<<<<<<< HEAD
+The **Chords-LSL-Visualizer** is an open-source, Rust-based graphical application for visualizing biopotential signals streamed over the **Lab Streaming Layer (LSL)** for Chords.  
+=======
 The **Chords-LSL-Visualizer** is an open-source, Rust-based graphical application for visualizing bio-potential signals streamed over the **Lab Streaming Layer (LSL)** for Chords.  
+>>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 It is designed to work seamlessly with Chords-compatible hardware (such as **Neuro Playground Lite** or other **BioAmp devices running Chords firmware**) by subscribing to their LSL streams and rendering live bio-potential signals in an interactive GUI.
 
 With Chords-LSL-Visualizer, you can:
@@ -140,7 +144,11 @@ Flashing the Firmware
 Visualization of LSL
 ************************
 
+<<<<<<< HEAD
+Once installed, follow these steps to start visualizing your biopotential signals:
+=======
 Once installed, follow these steps to start visualizing your bio-potential signals:
+>>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 
 1. **Start Chords-LSL-Visualizer** and click **Scan LSL Stream**.  
    This scans for active LSL streams broadcasted by your :ref:`Chords LSL Connector<chords-lsl-connector>` or compatible firmware.  

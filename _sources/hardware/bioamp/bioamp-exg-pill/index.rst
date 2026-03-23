@@ -38,7 +38,11 @@ Features & Specifications
 +----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Compatible Hardware  | Any development board with an ADC (Arduino UNO & Nano, Adafruit QtPy, STM32 Blue Pill, BeagleBone Black, Raspberry Pi Pico, to name just a few) or any standalone ADC of your choice |
 +----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Bio-potential Signals| EMG, ECG, EOG, EEG (configurable band-pass, by default configured for EEG & EOG)                                                                                                     |
+<<<<<<< HEAD
+| Biopotential Signals | EMG, ECG, EOG, EEG (configurable band-pass, by default configured for EEG & EOG)                                                                                                     |
+=======
+| Bio-potential Signals | EMG, ECG, EOG, EEG (configurable band-pass, by default configured for EEG & EOG)                                                                                                     |
+>>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 +----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | No. of channels      | 1                                                                                                                                                                                    |
 +----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -81,7 +85,11 @@ Software requirements
 
     Arduino IDE v1.8.19 (legacy IDE) 
 
+<<<<<<< HEAD
+- Visit Upside Down Labs `Chords Web <https://chords.upsidedownlabs.tech>`__ to visualize your biopotential signals directly in the browser.
+=======
 - Visit Upside Down Labs `Chords Web <https://chords.upsidedownlabs.tech>`__ to visualize your bio-potential signals directly in the browser.
+>>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 
 .. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
     :align: center
@@ -242,7 +250,11 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 Visualizing the EMG signals
 ----------------------------
 
+<<<<<<< HEAD
+For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle free real-time biopotential signal visualization right from your browser, without installing any software.
+=======
 For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signal visualization right from your browser, without installing any software.
+>>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 
 .. figure:: ../../../software/chords/chords-web/media/chords_emg_signal.*
     :align: center
@@ -317,7 +329,11 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 Visualizing the ECG signals
 -----------------------------
 
+<<<<<<< HEAD
+For visualizing the ECG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle free real-time biopotential signal visualization right from your browser, without installing any software.
+=======
 For visualizing the ECG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signal visualization right from your browser, without installing any software.
+>>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 
 .. figure:: ../../../software/chords/chords-web/media/chords_ecg_signal.*
     :align: center
@@ -391,7 +407,11 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 Visualizing the EOG signals
 ------------------------------
 
+<<<<<<< HEAD
+For visualizing the EOG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle free real-time biopotential signal visualization right from your browser, without installing any software.
+=======
 For visualizing the EOG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signal visualization right from your browser, without installing any software.
+>>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 
 .. figure:: ../../../software/chords/chords-web/media/chords_eog_signal.*
     :align: center
@@ -493,7 +513,11 @@ right COM port. Now upload the code.
 Visualizing the EEG signals
 -------------------------------
 
+<<<<<<< HEAD
+For visualizing the EEG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle free real-time biopotential signal visualization right from your browser, without installing any software.
+=======
 For visualizing the EEG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signal visualization right from your browser, without installing any software.
+>>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 
 .. figure:: ../../../software/chords/chords-web/media/chords_eeg_signal.*
     :align: center
