@@ -3,16 +3,20 @@
 Courses
 ########
 
-Welcome to the Neuroscience Courses section - Your starting point for understanding the electrical language of the nervous system through clear concepts and practical neuroscience applications.
+.. figure:: neuroscience-basics-for-biopotential-signals/media/courses-main-page-banner.*
+    :align: center
+    :alt: Courses Main Page Banner 
+    
+Welcome to the Neuroscience Courses section: Your starting point for understanding the electrical language of the nervous system through clear concepts and practical neuroscience applications.
 
 These courses guide you step-by-step from the basic principles of neuroscience to real, practical skills for recording brain,
-muscle, and nerve activity. Whether you're new to the field or already have experience, you’ll find clear explanations, 
+muscle, heart and eye electrical activity. Whether you're new to the field or already have experience, you’ll find clear explanations, 
 hands-on demonstrations, and simple project-based learning that make even the complex topics easy to understand.
 
 Each module includes clear diagrams, step-by-step explanations, and practical insights that help you understand both the 
 science behind biopotential signals and the hardware used to record them.
 
-Start your journey into the electrical world of the nervous system - and experience neuroscience in a truly practical, 
+Start your journey into the electrical world of the nervous system and experience neuroscience in a truly practical, 
 hands-on way.
 
 .. only:: html
@@ -29,7 +33,7 @@ hands-on way.
          :link: neuroscience-basics-for-biopotential-signals-module-1
          :link-type: ref
 
-      .. grid-item-card:: Module 2: Understanding the resting potential
+      .. grid-item-card:: Module 2: Understanding the Resting Potential
          :text-align: center
          :link: neuroscience-basics-for-biopotential-signals-module-2
          :link-type: ref
