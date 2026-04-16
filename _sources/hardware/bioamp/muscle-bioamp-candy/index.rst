@@ -134,11 +134,7 @@ Before you start using the kit, please download `Arduino IDE v1.8.19 (legacy IDE
 
     Arduino IDE v1.8.19 (legacy IDE) 
 
-<<<<<<< HEAD
-Visit Upside Down Labs `Chords Web <https://chords.upsidedownlabs.tech>`__ to visualize your biopotential signals directly in the browser.
-=======
 Visit Upside Down Labs `Chords Web <https://chords.upsidedownlabs.tech>`__ to visualize your bio-potential signals directly in the browser.
->>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 
 .. figure:: ../../../software/chords/chords-web/media/chords_landing_page.*
     :align: center
@@ -238,11 +234,7 @@ After opening the serial plotter make sure to select the baud rate to 115200.
 Visualizing the EMG signals
 ------------------------------
 
-<<<<<<< HEAD
-For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle free real-time biopotential signals visualization right from your browser, without installing any software.
-=======
 For visualizing the EMG signals, use `Chords Web <https://chords.upsidedownlabs.tech/>`__ for quick and hassle-free real-time bio-potential signals visualization right from your browser, without installing any software.
->>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 
 .. figure:: ../../../software/chords/chords-web/media/chords_emg_signal.*
     :align: center

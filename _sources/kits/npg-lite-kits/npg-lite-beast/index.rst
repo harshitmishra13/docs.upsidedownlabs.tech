@@ -4,11 +4,7 @@ NPG Lite - Beast Pack
 ###################################
 
 The Beast Pack is the most powerful kit in the lineup, designed for advanced users and researchers.  
-<<<<<<< HEAD
-With the VibZ+ Playmate, it enables full 6-channel biopotential signal acquisition along with haptic and auditory feedback.  
-=======
 With the VibZ+ Playmate, it enables full 6-channel bio-potential signal acquisition along with haptic and auditory feedback.  
->>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 Pre-assembled in a sturdy 3D-printed case, this kit provides maximum capability for neuroscience experiments, HCI/BCI applications, and biopotential signal research.  
 
 👉🏻 **Get yours on CrowdSupply**: `Neuro PlayGround Lite <https://www.crowdsupply.com/upside-down-labs/neuro-playground-lite>`__
@@ -52,11 +48,7 @@ VibZ+ Playmate
 *******************
 
 VibZ+ Playmate builds on the VibZ by including an additional 3-channel BioAmp, making it possible to record 
-<<<<<<< HEAD
-and visualize up to 6 Biopotential signal channels simultaneously. It retains the vibration motor for haptic feedback, 
-=======
 and visualize up to 6 Bio-potential signal channels simultaneously. It retains the vibration motor for haptic feedback, 
->>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 buzzer for auditory cues, ON/OFF slide switch, QWIIC port, and electrode connector interface. 
 This makes VibZ+ ideal for experiments where higher-resolution input or greater spatial coverage is essential, 
 such as multi-channel EEG, EMG, or complex biofeedback applications.
@@ -64,17 +56,10 @@ such as multi-channel EEG, EMG, or complex biofeedback applications.
 Using the Kit
 ********************
 
-<<<<<<< HEAD
-This kit is designed for advanced biopotential signal research, enabling users to quickly start recording and visualizing
-multi-channel data for high-resolution HCI/BCI experiments.
-The VibZ+ Playmate significantly enhances acquisition by including an additional 3-channel BioAmp, allowing 
-simultaneous recording of up to six biopotential signal channels. It retains the vibration motor, buzzer, and QWIIC port, 
-=======
 This kit is designed for advanced bio-potential signal research, enabling users to quickly start recording and visualizing
 multi-channel data for high-resolution HCI/BCI experiments.
 The VibZ+ Playmate significantly enhances acquisition by including an additional 3-channel BioAmp, allowing 
 simultaneous recording of up to six bio-potential signal channels. It retains the vibration motor, buzzer, and QWIIC port, 
->>>>>>> 08238d5f39ff070158a0689f1cad56ed01507119
 making it ideal for multi-channel EEG, EMG, or complex biofeedback applications.
 
 Step 1: Skin Preparation
